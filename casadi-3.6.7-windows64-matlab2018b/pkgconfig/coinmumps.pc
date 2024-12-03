@@ -1,0 +1,15 @@
+prefix=/work/build/external_projects
+#prefix=${pcfiledir}/../..
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include/coin-or/mumps
+
+Name: Mumps
+Description: Multifrontal Massively Parallel sparse direct Solver
+URL: https://github.com/coin-or-tools/ThirdParty-Mumps
+Version: 3.0.1
+Cflags: -I${includedir}
+Libs: -L${libdir} -lcoinmumps
+Requires.private: 
+#Libs: -L${libdir} -lcoinmumps -L/work/build/external_projects/lib -lcoinmetis -lm  -L/work/build/external_projects/bin -lcasadi-tp-openblas   -L/usr/src/mxe/usr/lib/gcc/x86_64-w64-mingw32.shared.posix/11.2.0 -L/usr/src/mxe/usr/lib/gcc/x86_64-w64-mingw32.shared.posix/11.2.0/../../../../x86_64-w64-mingw32.shared.posix/lib/../lib -L/usr/src/mxe/usr/x86_64-w64-mingw32.shared.posix/lib/../lib -L/usr/src/mxe/usr/lib/gcc/x86_64-w64-mingw32.shared.posix/11.2.0/../../../../x86_64-w64-mingw32.shared.posix/lib -L/usr/src/mxe/usr/x86_64-w64-mingw32.shared.posix/lib -lgfortran -lmingw32 -lmoldname -lmingwex -lssp_nonshared -lssp -lmsvcrt -lkernel32 -lquadmath -lm -lpthread -ladvapi32 -lshell32 -luser32 -lpthread 
+#Requires: 

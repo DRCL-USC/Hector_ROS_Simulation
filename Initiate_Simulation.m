@@ -17,8 +17,8 @@ world_rot_damping = 1e-3;
 joint_stiffness = 0;
 joint_damping = 0.001;
 % elastic stiff ground:
-contact_stiffness = 1e5;
-contact_damping = 1e3; 
+contact_stiffness = 100; %1e5;
+contact_damping = 20; %1e3; 
 contact_point_radius = 0.001; % contact cloud visual
 ankle_stiffness = 0.0;
 ankle_damping = 0.0;
