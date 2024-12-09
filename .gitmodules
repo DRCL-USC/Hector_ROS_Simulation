@@ -1,0 +1,3 @@
+[submodule "isaac"]
+	path = isaac
+	url = https://github.com/DRCL-USC/isaac
